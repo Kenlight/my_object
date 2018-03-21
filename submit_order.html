@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/submit_order.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="dtl_top">
+				<a href="#" class="lf return"><i class="mui-icon mui-icon-back"></i></a>
+				<a class="com_details">提交订单</a>
+			</div>
+		</header>
+		<!--头部-->
+		<!--主题-->
+		<section class="mui-content">
+			<div class="areaBox clear">
+				<a href="#">
+					<i class="mui-icon mui-icon-location lf"></i>	
+					<div class="area rt">													
+						<p>收货人：张默默&nbsp;&nbsp; 151****5210</p>
+						<p>宁夏回族自治区银川市西夏区贺兰山路与兴洲街交叉路口 宁夏电商谷久零网</p>
+					</div>
+				</a>
+			</div>
+			<p>
+				<img src="images/line_04.jpg" alt="" class="img-responsive"/>
+			</p>
+			<!--选择支付方式-->
+		    <from>
+		    	<div class="pay_money">
+		    		<p>支付方式</p>
+			    	<div class="mui-input-group">
+						<div class="mui-input-row mui-radio">
+							<label class="fl">
+								<i><img src="images/zhifub.png"></i>
+								<span>支付宝支付</span>
+								<p class="band">安全快捷，可支持银行卡支付</p>
+							</label>
+							<input name="pay" type="radio" value="1" checked="">
+						</div>
+						<div class="mui-input-row mui-radio">
+							<label>
+								<i><img src="images/weixin.png"></i>
+								<span>微信支付</span>
+								<p class="band">推荐已在微信中绑定银行卡的用户使用</p>
+							</label>
+							<input name="pay" type="radio" value="4">
+						</div>
+					</div>
+				</div>
+				<div class="yue">
+					<i><img src="images/yue.png" class="yue_1"></i>
+					<span class="juan">当前账户余额：5000零购券</span>
+				</div>
+				<div class="mui-input-row mui-radio pay_a">
+					<label>
+						<i></i>
+						<span>优先使用账户余额</span>
+					</label>
+					<input name="pay" type="radio" value="4" class="pay_b">
+				</div>
+				<div class="express_fee">
+					<span>快递费用：</span>
+					<span class="rt">¥12.00</span>
+				</div>
+			    <!--选择支付方式-->
+			    <!--订单信息-->
+			    <div class="order_info">
+			    	<p>订单信息</p>
+			    	<div class="list">
+			    		<div class="fl yuanBox">
+							<i class="yuan"></i>
+						</div>
+						<div class="title">
+							<p class="title_1">由久零名品从广东省广州市发货 </p>
+						</div>
+						<ul ind="0">
+							<li class="clearfix">
+								<a href="#">
+									<div class="img fl">
+								    	<img src="images/a3.png"/>
+								    </div>
+								    <div class="text rt">
+								    	<p class="overflow">六世缘-925耳饰JX-B3423</p>
+								    	<p class="color">颜色分类:02704Y1.9H,尺码:紫晶</p>
+								    	<p class="clearfix">
+									    	<span class="fl red">￥119</span>
+									    	<span class="fr">x
+									    		<span class="count">1</span>
+									    	</span>
+								    	</p>
+								    </div>
+								</a>
+							</li>
+						</ul>
+						<p class="total rt">小计：<span class="on">1016零购券</span></p>
+						<textarea name="" rows="1" cols="100" placeholder="买家留言（选填）"></textarea>
+			    	</div>
+			    	<div class="list">
+			    		<div class="fl yuanBox">
+							<i class="yuan"></i>
+						</div>
+						<div class="title">
+							<p class="title_1">由久零名品从广东省广州市发货 </p>
+						</div>
+						<ul ind="0">
+							<li class="clearfix">
+								<a href="#">
+									<div class="img fl">
+								    	<img src="images/a3.png"/>
+								    </div>
+								    <div class="text rt">
+								    	<p class="overflow">六世缘-925耳饰JX-B3423</p>
+								    	<p class="color">颜色分类:02704Y1.9H,尺码:紫晶</p>
+								    	<p class="clearfix">
+									    	<span class="fl red">￥119</span>
+									    	<span class="fr">x
+									    		<span class="count">1</span>
+									    	</span>
+								    	</p>
+								    </div>
+								</a>
+							</li>
+						</ul>
+						<p class="total rt">小计：<span class="on">1016零购券</span></p>
+						<textarea name="" rows="1" cols="100" placeholder="买家留言（选填）"></textarea>
+			    	</div>
+			    </div>
+			    <!--订单信息-->
+			    <!--总计-->
+			    <div class="totalBox">
+			    	<span>总计：￥2032.00零购券+12元</span>
+			    	<a href="#pay_choose" id="btn">提交订单</a>
+			    </div>
+			    <!--付款选项-->
+			    <div id="pay_choose" class="mui-popover mui-popover-bottom mui-popover-action ">
+				    <div class="pay_c">
+				    	<span class="lf" id="cancel">X</span>
+				    	<span>付款</span>
+				    	<i class="what rt"></i>
+				    </div>
+				    <p class="back">优先使用账户余额，零购券余额不足时使用现金支付</p>
+				    <div class="pay_r">  	
+				    	<ul class="mui-table-view mui-table-view-chevron mui-input-group">
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>
+											<i><img src="images/zhifub.png"></i>
+											<span class="alipay">支付宝支付</span>
+											<p class="band">安全快捷，可支持银行卡支付</p>
+										</label>
+										<input name="pay" type="radio" value="4" class="dot">
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>
+											<i><img src="images/weixin.png"></i>
+											<span class="weChat">微信支付</span>
+											<p class="band">推荐已在微信中绑定银行卡的用户使用</p>
+										</label>
+										<input name="pay" type="radio" value="4" class="dot">
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">
+									<div class="mui-input-row mui-radio mui-left">
+										<label>
+											<i><img src="images/yinlian.png"></i>
+											<span class="weChat">银联支付</span>
+											<p class="band">安全快捷，可支持银行卡支付</p>
+										</label>
+										<input name="pay" type="radio" value="4" class="dot">
+									</div>
+								</a>
+							</li>
+						</ul>	
+				    </div>
+				    <p class="yunf">支付<span class="on">￥12.00</span></p>
+				    <a href="#" id="btn_pay">去付款</a>
+				</div>
+			    <!--付款选项-->
+			    <!--总计-->
+			</from> 
+		</section>
+		<!--主题-->
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/web.js"></script>
+		<script type="text/javascript">
+			mui.init({})
+			$('#cancel').on('tap',function(){
+				$('pay_choose').remove();
+				var a = this,
+				parent;
+			//根据点击按钮，反推当前是哪个actionsheet
+			for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+				if (parent.classList.contains('mui-popover-action')) {
+					break;
+				}
+			}
+			//关闭actionsheet
+			mui('#' + parent.id).popover('toggle');
+			})
+		</script>
+	</body>
+</html>

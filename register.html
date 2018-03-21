@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="dtl_top">
+				<a href="javascript:history.go(-1)" class="lf"><i class="mui-icon mui-icon-back"></i></a>
+			</div>
+		</header>
+		<!--头部-->
+		<!--主题-->
+		<section>
+			<div class="logo">
+				<img src="images/logo_2.png" alt="" />
+			</div>
+			<form action="">
+				<div class='login_fields'>
+					<!--手机号码-->
+				    <div class='login_fields__user'>
+				      <div class='icon'>
+				        <img src='images/user_icon_copy.png'>
+				      </div>
+				      <input placeholder='输入您的手机号' type='text' id="phone">
+				       	<span class="phone_hint"></span>
+				    </div>
+				    <!--手机号码-->
+				    <!--验证码-->
+				    <div class='login_fields__password'>
+				      <div class='icon'>
+				        <img src='images/yzm.png'>
+				      </div>
+				      <input placeholder='输入验证码' type='password' class="code">
+				      <input type="button" value="获取验证码" name="yzm" id="authCode">
+				      <span class="number_hint"></span>
+				    </div>
+				    <!--验证码-->
+				    <!--密码-->
+				    <div class='login_fields__password'>
+				      <div class='icon'>
+				        <img src='images/lock_icon_copy.png'>
+				      </div>
+				      <input placeholder='输入登录密码(6位数字，字母或字符)' type='password' class="en_password">
+				      <span class="password_hint"></span>
+				    </div>
+				    <!--密码-->
+				</div>
+				<a href="#" id="btn">立即注册</a>
+				<div class="mui-input-row mui-checkbox mui-left group">
+					<label>
+						同意<a href="#" class="color">《久零名品使用协议》</a>
+					</label>
+					<input name="checkbox" value="Item 1" type="checkbox" checked="">
+				</div>
+			</form>
+		</section>
+		<!--主题-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/register.js"></script>
+		<script src="js/mui.min.js"></script>
+	</body>
+</html>

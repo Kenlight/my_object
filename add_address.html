@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/add_address.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="dtl_top">
+				<a href="comment_section.html" class="lf"><i class="mui-icon mui-icon-back"></i></a>
+				<a href="#topPopover" class="rt"  style="text-decoration: underline;">完成</a>
+				<a class="com_details">新增地址</a>
+			</div>
+		</header>
+		<!--头部-->
+		<!--主题-->
+		<section class="mui-content">
+			<form>
+				<div class="mui-input-group">
+					<div class="mui-input-row">
+				        <label>收货人</label>
+				   		<input type="text" class="mui-input-clear" placeholder="请输入收货人姓名">
+				    </div>
+				    <div class="mui-input-row">
+				        <label>手机号码</label>
+				        <input type="number" class="mui-input-clear" placeholder="请输入手机号码">
+				    </div>
+				    <div class="mui-input-row">
+				       	<label>省市地区</label>
+				        <input type="text" class="mui-input-clear" placeholder="点击选择" id="pipcker">
+				    </div>
+				     <div class="mui-input-row">
+				       	<label>详细地址</label>
+				        <textarea name="" rows="3" cols="120" placeholder="请输入详细地址(5-120个字)"></textarea>
+				    </div>
+				</div>
+			    <div class="stwich clear">
+			    	<span class="lf" style="margin-top:5px"></span>
+					<div class="mui-switch mui-switch-blue mui-switch-mini rt">
+						<div class="mui-switch-handle"></div>
+					</div>
+			    </div>
+			</form>
+		</section>
+		<!--主题-->
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data-3.js"></script>
+		<script src="js/add_address.js"></script>
+		<script type="text/javascript">
+				(function($, doc) {
+				$.init();
+				$.ready(function() {
+					/**
+					 * 获取对象属性的值
+					 * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+					 * @param {Object} obj 对象
+					 * @param {String} param 属性名
+					 */
+					var _getParam = function(obj, param) {
+						return obj[param] || '';
+					};
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var cityResult3 = doc.getElementById('pipcker');
+					var poppicker=doc.getElementsByClassName('.mui-poppicker');
+					cityResult3.addEventListener('tap', function(event) {
+//						poppicker.style.display="block";
+						cityPicker3.show(function(items) {
+							cityResult3.value = _getParam(items[0], 'text') + ' ' +  _getParam(items[1], 'text') +  ' ' +  _getParam(items[2], 'text');
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+	</body>
+</html>

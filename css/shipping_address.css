@@ -1,0 +1,241 @@
+/* CSS基本样式 */
+body{
+	font-family: "微软雅黑";
+	color:#333;
+	font-size: 14px;
+}
+.mui-content{
+	background: #FAFAFA;
+}
+ul,li,i,b,body,p,h1,h2,h3,h4,h5,h6,dd,dt,dl,a,textarea{
+	padding:0;margin:0;
+}
+ul,li{
+	list-style: none;
+}
+.clear:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+    zoom:1;
+}
+.lf{float:left;}
+.rt{float:right;}
+a{color:#666;}
+a:hover{color:#666;}
+/* 头部自定义样式 */
+.dtl_top{
+	width:100%;
+	background:#fff;
+	/*margin-bottom: 5px;*/
+	padding:10px 8px;
+	text-align: center;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 10000;
+	border-bottom:1px solid #E6E6E6;	
+}
+.dtl_top a i{
+	color:#333;
+	font-size:25px;
+}
+.com_details{
+	color:#333;
+	font-size:16px;
+}
+section{
+	margin-top:40px;
+}
+/* 用户评论 */
+#comments_list{
+	padding-left:0;
+}
+.comments {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background:#fff;
+    margin-bottom:5px;
+    padding:0 10px; 
+}
+.com_top{
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.com_content{
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.com_bottom{
+    overflow: hidden;
+    margin-top:5px;
+}
+.com_bottom .useful{
+    float: right;
+    font-size: 14px;
+    padding: 0 2px;
+    color: #999;
+    margin:4px 0  0 10px;
+}
+.com_bottom .usefulClick {
+    color: #F32D27;
+    border: 1px solid #FE4B3B;
+}
+#user_Comments{
+    padding-bottom: 15px;
+}
+.iconfont{
+	vertical-align: middle;
+}
+#comments_list p{
+	color:#333;
+	font-size:15px;
+}
+.mui-content-padded{
+	margin:0;
+	vertical-align: middle;
+}
+.mui-checkbox.mui-left input[type=checkbox]{
+	left:2px;
+}
+.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+	padding-left:20px;
+	margin-top:-3px;
+	color:#666;
+	font-size:12px;
+}
+.mui-checkbox input[type=checkbox]:before{
+	font-size:20px;
+}
+.checked:checked:before{
+	color:#EA4D01 !important;
+}
+.mui-icon{
+	font-size:20px;
+}
+.mui-input-row{
+	margin-top:5px;
+}
+#fixed_btn{
+	background:#f0ad4e;
+	border:none;
+	border-radius: 5px;
+}
+.marginT{
+	margin-top:55px;
+}
+.mui-icon-extra{
+	font-size: 16px;
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	font-size: 16px;
+}
+.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio]{
+	left:-1px;
+}
+.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color:#D21C00;
+}
+.on{
+	color:#D21C00 !important;
+}
+.useful a{
+	font-size: 12px;
+}
+.mui-popup-title+.mui-popup-text{
+	font-size: 18px;
+}
+#btn{
+	display: block;
+	width:91%;       
+	background: #D8320C;
+	text-align: center;
+	margin: 0 15px;
+	color: #fff;
+	padding:10px 0;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.add{
+	width:18px;
+	height:18px;
+	text-align: center;
+	line-height: 18px;
+	color:#CF0E00;
+	background: #fff;
+	margin-right: 5px;
+	font-size: 20px;
+}
+/*编辑*/
+#address{
+	background: #fff;
+	padding:10px;
+	height:400px;
+	font-size: 12px;
+}
+#cancel{
+	width:20px;
+	height:20px;
+	text-align: center;
+	border:1px solid #7F7F7F;
+	line-height: 20px;
+	border-radius: 50%;
+	color:#7F7F7F;
+}
+#address p{
+	color:#000;
+	border-bottom: 1px solid #ddd;
+	padding:10px 0;
+}
+.mui-popover.mui-popover-action .mui-table-view{
+	margin:0;
+	background: #fff;
+	color:#333;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	text-align:left;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	padding:10px 0;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	right:0;
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+	color:#000;
+}
+.mui-popover .mui-table-view:after, .mui-popover .mui-table-view:before{
+	height:1px;
+}
+/*编辑*/
+/*底部导航*/
+#nav_bars.mui-bar-tab .mui-tab-item {
+
+    color: #282828;
+}
+#nav_bars.mui-bar-tab .mui-tab-item.mui-active {
+    color: #FEFCFA;
+    background:#F07E0E !important;
+    
+}
+#nav_bars .mui-tab-label{
+	position: relative;
+}
+.gouwu_munber2{
+	padding:2px 3px;
+	border-radius: 20px;
+	text-align: center;
+	position: absolute;
+	left: 17px;
+	top:-3px;
+	background:#DA4320;
+	color:#fff;
+	font-size: 12px;
+}
+/*底部导航结束*/

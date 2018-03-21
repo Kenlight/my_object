@@ -1,0 +1,249 @@
+/*头部 */
+.dtl_top{
+	width:100%;
+	background:#fafafa;
+	/*margin-bottom: 5px;*/
+	padding:10px 8px;
+	text-align: center;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 10000;
+}
+.dtl_top a i{
+	color:#333;
+	font-size:25px;
+	margin-left:-5px;
+}
+.com_details{
+	color:#333;
+	font-size:16px;
+	font-weight: 600;
+}
+section{
+	margin-top:46px;
+}
+a:hover{
+	color:#333;
+}
+/*头部 */
+/* 基本样式 */
+body{
+	background:#EDEDED;
+	font-family: "微软雅黑";
+	color:#333;
+	font-size: 14px;
+	margin-bottom: 62px;
+}
+ul,li,i,b,p,h1,h2,h3,h4,h5,h6,dd,dt,dl,a,textarea,p{
+	padding:0;margin:0;
+}
+ul,li{
+	list-style: none;
+}
+.clear:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+    zoom:1;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.img-responsive {
+  	display: inline-block;
+  	height: auto;
+  	max-width: 100%;
+}
+img{
+	vertical-align: middle;
+}
+.list{
+	display: none;
+}
+.list:first-child{
+	display: block;
+}
+/*基础样式*/
+/*主题*/
+/*订单列表*/
+.stwichTap{
+	width:100%;
+	background:#fff;
+	margin-bottom: 5px;
+}
+.stwichTap>p{
+	padding:10px 4px;
+	margin:0 6px;
+	float:left;
+	width:20%;
+	text-align: center;
+	color:#333;
+}
+.on{
+	color:#D72803 !important;
+	border-bottom: 1px solid #D72803;
+}
+/*订单列表*/
+/*待付款*/
+.list{
+	width: 100%;
+	padding: 0 .5rem .5rem;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+}
+.title_1{
+	margin-left: 1.2rem;
+	color:#333;
+}
+.list label img{
+	width: .8rem;
+	height: .8rem;
+	margin-top: -.4rem;
+}
+.title{
+	padding:.5rem 0;
+	border-bottom: 1px solid #ddd;
+}
+.write{
+	color:#D72803;
+}
+ul li{
+	width: 100%;
+	padding: 0 0 .5rem;
+	border-bottom: 1px solid #eee;
+}
+ul li .label{
+	width: 2rem;
+	height: 2rem;
+	padding: .6rem;
+	overflow: hidden;
+}
+ul li .img{
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-top: .5rem;
+}
+ul li .text{
+	width: 10rem;
+	margin-left: .5rem;
+}
+ul li .text p{
+	width: 100%;
+	margin:.4rem 0; 
+}
+ul li .text div input,.number{
+	display: inline-block;
+	text-align: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	background: rgba(255,255,255,.7);
+	color: #000;
+	border: 1px solid #eee;
+	font-size: .53rem;
+}
+.overflow{
+	text-overflow: ellipsis;
+	overflow: hidden;white-space: nowrap;
+	font-size: 14px;
+	margin:0.5rem 0 !important;
+	color:#666 !important;
+}
+.color{
+	color:#9A9A9A !important;
+	font-size: 13px;
+}
+.red{
+	color: #000;
+}
+ul li .img img{
+	width: 100%;
+	height: 100%;
+}
+.list label img{
+	width: .8rem;
+	height: .8rem;
+}
+.list label img{
+	width: .8rem;
+	height: .8rem;
+}
+/*按钮*/
+.btn{
+	background: #fff;
+	padding:10px 0 0;
+	width:100%;
+	text-align: right;
+}#contact,#cancel,#pay,#del{
+	width:70px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border:1px solid #333;
+	border-radius: 12px;
+	display: inline-block;
+}
+.hover{
+	color:#D72803;
+	border:1px solid #D72803 !important;
+}
+.hover:hover{
+	color:#D72803;
+}
+/*按钮*/
+/*待付款*/
+/*待收货*/
+.sand{
+	margin-left:0 !important;
+	color: #333;
+}
+.total{
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	background: white;
+	text-align: right;
+    color: #666 !important;
+	padding-right: 1.2rem;
+}
+.total span{
+	color: #333;
+}
+/*待收货*/
+/*全部订单*/
+.cal_btn{
+	margin-top: 5px;
+}
+/*全部订单*/
+/*主题*/
+/*底部导航*/
+#nav_bars.mui-bar-tab .mui-tab-item {
+
+    color: #282828;
+}
+#nav_bars.mui-bar-tab .mui-tab-item.mui-active {
+    color: #FEFCFA;
+    background:#F07E0E !important;
+    
+}
+#nav_bars .mui-tab-label{
+	position: relative;
+}
+.gouwu_munber2{
+	padding:2px 3px;
+	border-radius: 20px;
+	text-align: center;
+	position: absolute;
+	left: 17px;
+	top:-3px;
+	background:#DA4320;
+	color:#fff;
+	font-size: 12px;
+}
+/*底部导航结束*/

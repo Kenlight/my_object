@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+<!--		<link rel="stylesheet" href="css/mui.min.css" />-->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/shopping_cart.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="javascript:history.go(-1)" class="fl">
+				<i class="icon"></i>
+			</a>
+	    	购物车<span class="fr">编辑</span>
+	    </header>
+		<!--头部-->
+		<!--主题-->
+		<section class="mui-content">
+			<div class="no">
+				<p>暂无数据，快去逛逛吧！</p>
+			</div>
+			<div class="con">
+				<div class="content">
+					<div class="list">
+						<div class="fl">
+							<label>
+								<input type="checkbox" checked="checked"/>
+								<img src="images/c_checkbox_on.png" alt="" />
+							</label>
+						</div>
+						<p>久零名品旗舰店 <span class="fr write">编辑</span></p>
+					</div>
+					<ul ind="0">
+						<li class="clearfix">
+							<a href="#">
+								<div class="label fl">
+									<label>
+										<input type="checkbox" checked="checked" />
+										<img src="images/c_checkbox_on.png" alt="" />
+									</label>
+								</div>
+								<div class="img fl">
+					    			<img src="images/a3.png"/>
+					    		</div>
+					    		<div class="text fl">
+					    			<p class="overflow">六世缘-925耳饰JX-B3423</p>
+					    			<p class="color">02704Y1.9H,紫晶</p>
+					    			<div class="">
+					    				<input type="button" value="-" class="btn1" />
+					    				<span class="number">1</span>
+					    				<input type="button" value="+"  class="btn2"/>
+					    			</div>
+					    			<p class="clearfix">
+					    				<span class="fl red">￥119</span>
+					    				<span class="fr">x
+					    					<span class="count">1</span>
+					    				</span>
+					    			</p>
+					    		</div>
+							</a>
+							
+						</li>
+						<li class="clearfix">
+							<a href="#">
+								<div class="label fl">
+									<label>
+										<input type="checkbox" checked="checked" />
+										<img src="images/c_checkbox_on.png" alt="" />
+									</label>
+								</div>
+								<div class="img fl">
+					    			<img src="images/a4.png"/>
+					    		</div>
+					    		<div class="text fl">
+					    			<p class="overflow">六世缘-925耳饰JX-B3423</p>
+					    			<p class="color">02704Y1.9H,紫晶</p>
+					    			<div>
+					    				<input type="button" value="-" class="btn1" />
+					    				<span class="number">1</span>
+					    				<input type="button" value="+"  class="btn2"/>
+					    			</div>
+					    			<p class="clearfix">
+					    				<span class="fl red">￥119</span>
+					    				<span class="fr">x
+					    					<span class="count">1</span>
+					    				</span>
+					    			</p>
+					    		</div>
+							</a>
+						</li>
+					</ul>
+					<p class="total" style="display: none;">一共<number></number>件商品：<span></span></p>
+				</div>
+			</div>
+			<!--主题-->
+			<!--结算-->
+		    <div class="bottom fixed">
+		    	<div class="fl bottom-label">
+		    		<label>
+		    			<input type="checkbox" checked="checked"/>
+		    			<img src="images/c_checkbox_on.png" class="fl" />
+		    			<b>全选</b>
+		    		</label>
+		    	</div>
+	    		<div class="fr">
+	    			总计：<span></span>
+	    			<button class="sett">结算</button>
+	    		</div>
+		    </div>
+	     	<!--结算-->
+	       	<!--删除-->
+		    <div class="bottom fixed" style="display: none;">
+	    		<div class="fr">
+	    			<button class="delete">删除</button>
+	    		</div>
+		    </div>
+		    <!--删除-->
+		    <!--弹框-->
+		    <div class="text1 fixed">
+		    	<form>
+		    		<input type="number" oninput="checkNum(this.value)" id="input"/>
+		    		<input type="button"  value="确定"/>
+		    	</form>
+		    </div>
+		    <!--弹框-->
+		    <!--弹框2-->
+		    <div class="alert fixed"></div>
+		     <!--弹框2-->
+		</section>
+		<!--<script src="js/mui.min.js"></script>-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/zepto.js"></script>
+		<script src="js/web.js"></script>
+		<script src="js/shopping_cart.js"></script>
+		<script type="text/javascript">
+			function checkNum(val) {
+				document.getElementById('input').value = val >= 0 ? val : 0
+			}
+		</script>
+	</body>
+</html>

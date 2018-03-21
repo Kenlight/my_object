@@ -1,0 +1,151 @@
+/*全局设置*/
+body{
+	background:#fff;
+	font-size: 12px;
+	margin-bottom: 70px !important;
+}
+a{
+	color:#505050;
+}
+ul,ol,li,i,b,body,p,h1,h2,h3,h4,h5,h6,dd,dt,dl{
+	margin:0;
+	padding:0;
+}
+img{
+	vertical-align:bottom;
+}
+ui,li{
+	list-style-type: none;
+}
+.clear{
+	clear:both;
+}
+
+/*全局设置结束*/
+
+
+/*头部*/
+header.mui-bar,
+#nav_bars{
+	 box-shadow: 0 0 1px rgba(0,0,0,0) !important;
+	 background:#fff !important;
+}
+header .mui-title{
+	color:#3B3B3B !important;
+	font-weight: bold;
+	}
+header.mui-bar a.mui-icon{
+	color:#000 !important;
+}
+/*消费记录*/
+.business{
+	margin-top:56px;
+	display: flex;
+	
+}
+.business>div{
+	width:50%;
+	box-sizing: border-box;
+	background:#fff;
+}
+.business div:nth-child(1){
+	box-sizing: border-box;
+	display: flex;
+	padding-right:15px;
+	flex-direction: row-reverse;
+	border-right: 2px solid #646464;
+}
+.business div:nth-child(2){
+	box-sizing: border-box;
+	display: flex;
+	padding-left:15px;
+}
+.business>div>span{
+	padding:5px 20px;
+	background:#E8E8E8;
+	border-radius: 20px;
+}
+
+.business>div>span>a{
+	font-size: 15px;
+	padding:2px 5px;
+	border-bottom: 2px solid transparent;
+}
+.business>div>span>a.isRed{
+	color:#D9452B;
+	border-color:#D7320C;
+}
+/*消费记录列表*/
+
+ul.consume_notes{
+	background:#fff;
+	padding:20px 5px 10px 20px;
+	display: none;
+}
+ul.show_view{
+	display: block ;	
+}
+ul.consume_notes img{
+	width:100%;
+}
+ul.consume_notes li{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-bottom: 1px solid #EFEFEF;
+}
+ul.consume_notes li>div:nth-child(1){
+	width:16%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+ul.consume_notes li>div:nth-child(2){
+	padding-left:10px;
+	width:54%;
+}
+ul.consume_notes li>div:nth-child(2)>p{
+	width:90%;
+	color:#000000;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+ul.consume_notes li>div:nth-child(2)>span{
+	color:#606060;
+	
+}
+ul.consume_notes li>div:nth-child(3){
+	width:30%;
+	font-weight: bold;
+	color:#000;
+	font-size: 14px;
+	
+}
+/*购物车数量显示*/
+.gouwu_munber2{
+	padding:2px 3px;
+	border-radius: 20px;
+	text-align: center;
+	position: absolute;
+	left: 17px;
+	top:-3px;
+	background:#DA4320;
+	color:#fff;
+	font-size: 12px;
+}
+/*底部导航*/
+#nav_bars.mui-bar-tab .mui-tab-item {
+
+    color: #282828;
+}
+#nav_bars.mui-bar-tab .mui-tab-item.mui-active {
+    color: #FEFCFA;
+    background:#F07E0E !important;
+    
+}
+#nav_bars .mui-tab-label{
+	position: relative;
+}
+
+/*底部导航结束*/

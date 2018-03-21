@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+		<link rel="stylesheet" href="css/shipping_address.css" />
+	</head>
+	<body>
+		<header>
+			<div class="dtl_top">
+				<a href="#" class="lf"><i class="mui-icon mui-icon-back"></i></a>
+				<a class="com_details">收货地址</a>
+			</div>
+		</header>
+		<section class="mui-content">
+			<form action="">
+				<ul id="comments_list mui-input-group">
+					<li class="comments">
+						<div class="com_top">
+						    张默默，18095422252
+						</div>
+						<p style="color:#333;">广东省广州市越秀区东风路虹桥街319号</p>
+						<div class="mui-content-padded">
+						   	<div class="mui-input-row mui-radio mui-left mui-inline">
+								<label class="on">已设为默认</label>
+								<input name="radio1" type="radio" value="" checked>
+							</div>
+							<div class="com_bottom rt"> 
+								<span class="useful user_recommed">
+								    <i class="mui-icon mui-icon-trash"></i>
+								    <a class="del">删除</a>
+								</span>
+								<span class="useful">
+							       	<i class="mui-icon-extra mui-icon-extra-order"></i>
+							       	<a href="#address">编辑</a>
+							    </span>			   
+							</div>
+						</div>
+					</li>
+					<li class="comments">
+						    <div class="com_top">
+						       	张默默，18095422252
+						    </div>
+						    <p style="color:#333;">广东省广州市越秀区东风路虹桥街319号</p>
+						    <div class="mui-content-padded">
+						    	<div class="mui-input-row mui-radio mui-left mui-inline ">
+									<label>设为默认</label>
+									<input name="radio1" type="radio" value="">
+								</div>
+								<div class="com_bottom rt"> 
+								   <span class="useful user_recommed">
+								       	<i class="mui-icon mui-icon-trash"></i>
+								       	<a class="del">删除</a>
+								    </span>
+									<span class="useful">
+							       		<i class="mui-icon-extra mui-icon-extra-order"></i>
+							       		<a href="#address">编辑</a>
+							       </span>			   
+							    </div>
+							</div>
+					 </li>  
+				</ul>
+				<p style="height:50px;"></p>
+				<a href="add_address.html" id="btn"><i class="mui-icon mui-icon-plusempty add"></i>新增地址</a>
+			</form>
+			<!--弹框模式-->
+			<div id="address" class="mui-popover mui-popover-bottom mui-popover-action ">
+				<div class="pay_c clear">
+				    <span class="rt" id="cancel">X</span>
+				</div>
+				<p>修改收货信息</p>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="">
+							收货人
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="">
+							联系电话
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							所在地区
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							街道
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--弹框模式-->
+		</section>
+		<!--底部-->
+		<nav id="nav_bars" class="mui-bar mui-bar-tab">
+			<a data-url="#" class="mui-tab-item  mui-active">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </ a>
+		    <a onclick="shop_url(this)" data-url="#" class="mui-tab-item">
+		        <span class="mui-icon  mui-icon-list"></span>
+		        <span class="mui-tab-label">分类</span>
+		    </ a>
+		  
+		    <a onclick="shop_url(this)" data-url="#" class="mui-tab-item">
+		        <span class="mui-icon iconfont icon-gouwuche"><b class="gouwu_munber2">18</b></span>
+		        <span class="mui-tab-label">购物车</span>
+		    </ a>
+		    <a onclick="shop_url(this)" data-url="#" class="mui-tab-item">
+		        <span class="mui-icon iconfont icon-huiyuanzhongxin"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </ a>
+		</nav> 
+		<!--底部-->
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/shipping_address.js"></script>
+		<script>
+			mui.init({
+				
+			});
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,494 @@
+/* CSS基本样式 */
+body{
+	background:#E6E6E6;
+	font-family: "微软雅黑";
+	color:#4D4D4D;
+	font-size: 14px;
+}
+ul,li,i,b,body,p,h1,h2,h3,h4,h5,h6,dd,dt,dl,a{
+	padding:0;margin:0;
+}
+img{
+	vertical-align:bottom;
+}
+ul,li{
+	list-style: none;
+}
+
+p{
+    font-size:14px;
+}
+.lt{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.red{
+	color:#D93812;
+}
+.mui-content img{
+	width:100%;
+}
+#swiper_defined img{
+	height:350px;
+	/*height:637px;*/
+}
+/*全局设置结束*/
+/*定位top部分*/
+.flexd_top{
+	position:fixed;
+	top:5px;
+	left:5px;
+	z-index: 99;
+	transition:all 0.5s linear;
+}
+.flexd_top a{
+	color:#28282A;
+	
+}
+.img_ditail{
+	font-size: 12px;
+	width:43px;
+	height:43px;
+	padding:6px;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 50%;
+	position:absolute;
+	bottom: 7px;
+	right:20px;
+	z-index: 99;
+	line-height: 15px;
+	color:#464646;
+	
+}
+
+/*定位top部分结束*/
+
+
+/*轮播自定义样式*/
+/*滚动轮播*/
+ .swiper-pagination-fraction {
+ 	color:#fff;
+ 	border-radius: 10px;
+   	background: rgba(0,0,0,0.2);
+    left: 43% !important;
+    width: 18% !important;
+}
+/*轮播结束*/
+/*商品价格*/
+i.iconfont {
+ 
+    font-size: 24px !important;
+ 
+}
+.Commodity_details{
+	background: #FFFFFF;
+	padding-top:20px;
+	margin-bottom: 36px;
+}
+.Commodity_details:after{
+	content: "--已经到底啦，往上逛逛吧--";
+	display: block;
+	width:100%;
+	text-align: center;
+	padding:10px 0;
+}
+.Commodity_details_price{
+	
+	padding:0 15px;
+	display: flex;
+	justify-content: space-between;
+}
+p.Conmodity_p{
+	padding:0 10px;
+}
+.Commodity_details_price span{
+	font-size: 16px;
+	font-weight: bold;
+	color:#DF5535
+}
+.Commodity_details_price p>i.mui-icon{
+	margin-left:10px;
+}
+/*颜色/产品分类/配送..*/
+.Commodity_details li.mui-table-view-cell {
+    padding: 11px 15px;
+   
+}
+.Commodity_details li.mui-table-view-cell:after {
+ 
+    left: 0px !important;
+
+}
+.Commodity_details .mui-table-view:before {
+    background-color:transparent !important;
+  
+}
+.Commodity_details .mui-table-view:after {
+    background-color:transparent !important;
+  
+}
+.Commodity_details>ul.mui-table-view .mui-table-view-cell:nth-child(2):after {
+    background-color:transparent !important;
+  
+}
+.Commodity_details>ul.mui-table-view .mui-table-view-cell:nth-child(1):after {
+    background-color:#EAEAEA !important;
+  
+}
+.Commodity_details .mui-navigate-right:after{
+    color: #585858;
+   
+}
+.Commodity_details .mui-navigate-right{
+	font-size: 18px;
+}
+ .Commodity_details .mui-table-view-cell p:nth-child(2){
+  	margin-top:5px;
+    color: #585858;
+}
+/*点击收藏弹出信息框的位置*/
+.mui-toast-container{
+	bottom:50% !important;
+}
+/*颜色分类*/
+#detail_sheet .mui-table-view-cell p:nth-child(1) {
+    margin-top: 5px;
+    color: #DC4726;
+    font-size: 18px;
+}
+
+/*购物车按钮*/
+#fixed_btn{
+	position: fixed;
+	left:0;
+	bottom: 0;
+	margin:0;
+	background:red;
+	color:#fff;
+	border:none;
+	border-radius: 5px;
+}
+#detail_sheet .mui-table-view{
+	margin:0;
+	max-height:none  !important;
+}
+#detail_sheet .mui-table-view-cell.mui-active{
+	background-color:#F7F7F7 !important;
+}
+.detail_img{
+	width:30%;
+	display:block;
+	
+}
+
+.detail_img img{
+	width:100%;
+}
+.detail_h{
+	margin-top: 17%;
+    padding-left: 5%;
+}
+/*加入购物车按钮*/
+.shoipping_btn_left{
+	background:red;
+	color:#fff;
+	padding:8px 13%;
+	border-radius: 5px;
+	float:left;
+	border:none;
+}
+/*立即购买按钮*/
+.shoipping_btn_right{
+	background:red;
+	color:#fff;
+	padding:8px 15%;
+	border-radius: 5px;
+	float:right;
+	border:none;
+}
+
+.mui-media-price{
+	padding-top:10px;
+	color:red;
+}
+/*购物车篮*/
+.u_shop_bag{
+    position: fixed;
+    bottom: 60px;
+    left: 10px;
+    min-width: 40px;
+    height: 40px;
+    z-index: 10;
+    background: #e6242b;
+    border-radius: 50px;
+}
+.u_shop_bag .mui-icon{
+	color:#fff;
+	font-size: 24px;
+	margin-top:25%;
+	margin-left:20%;
+	
+}
+.u_shop_bag p{
+	background:yellow;
+	position:absolute;
+	right:-5px;
+	top:-5px;
+	padding:2px;
+	border-radius: 10px;
+	min-width:20px;
+	min-height:20px;
+	text-align: center;
+	color:#CF2D28;
+	
+}
+/*购物车规格颜色样式*/
+.specifications{
+  
+    text-align: left;
+     color: #3E3E3E !important; 
+  
+}
+.specifications h4{
+		font-size: 16px;
+}
+/*加入购物车弹出框*/
+.specifications>li{
+	border-bottom: 1px solid #EDEDED;
+	padding-bottom: 5px;
+}
+.specifications>li:last-child{
+	border:0;
+}
+.specifications h4{
+	padding:15px 0;
+}
+.specifications ol{
+	width:100%;
+	padding-left:0;
+	
+}
+.specifications ol:after{
+	content: "";
+	display: table;
+	clear: both;
+	height:0;
+	
+}
+.specifications ol li{
+	float:left;
+	padding:5px 30px 5px 30px;
+	margin:0 0 5px 5px;
+	border-radius: 20px;
+	/*background:#E3E3E3;*/
+	background:#F0F0F0;
+
+	
+}
+.specifications ol li span{
+	color:#3E3E3E;
+	font-weight: bold;
+}
+/*点击时所需要的样式*/
+.specifications ol li.gradient{
+	background:#C9C9C9;
+}
+
+/*购买数量样式*/
+.bay_number{
+	padding-top:15px;
+	padding-bottom: 0;
+}
+
+
+
+
+/*参数查看meniu*/
+#canshu .mui-table-view {
+    margin: 0 !important;
+    text-align:left !important;
+    color: #808080;
+    max-height:none;
+    padding-top:10px;
+    
+ 
+}
+#canshu .mui-btn-warning{
+    color: #fff;
+    border: 1px solid #D8320C;
+    background-color: #D8320C;
+
+}
+
+#canshu .mui-table-view-cell:after {
+     background-color: transparent !important;  
+}
+#canshu .mui-table-view-cell span{
+	display: inline-block;
+	width:70%;
+	float:right;
+	color:#464646;
+}
+#canshu li.mui-table-view-cell {
+    padding: 6px 10px;
+}
+#canshu li.mui-table-view-cell>h4{
+   padding-top:20px;
+   position: relative;
+}
+ 
+#canshu .detele_i{
+	border:1px solid #CCCCCC;
+	border-radius: 50%;
+	width:30px;
+	height:30px;
+	line-height: 25px;
+	text-align: center;
+	position: absolute;
+	right:10px;
+	top:-5px;
+	font-weight: 100;
+	color:#464646;
+	
+
+}
+/*地址选择meniu*/
+#add_address .mui-table-view {
+    margin: 0 !important;
+    text-align:left !important;
+    color: #000000;
+    max-height:none;
+
+    
+ 
+}
+#add_address .mui-btn-warning{
+    color: #fff;
+    border: 1px solid #D8320C;
+    background-color: #D8320C;
+
+}
+#add_address .mui-input-group .mui-input-row {
+    height: 70px;
+}
+#add_address .mui-input-row label {
+
+    padding: 27px 60px;
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {
+
+    line-height: 2 !important;
+
+}
+/*#add_address .mui-table-view-cell:after {
+     background-color: transparent !important;  
+}*/
+#add_address .mui-table-view-cell span{
+	display: inline-block;
+	width:70%;
+	float:right;
+	color:#464646;
+}
+#add_address li.mui-table-view-cell {
+    padding: 12px 10px;
+}
+#add_address li.mui-table-view-cell>h4{
+   padding-top:45px;
+   position: relative;
+}
+ 
+#add_address .detele_i{
+	border:1px solid #CCCCCC;
+	border-radius: 50%;
+	width:30px;
+	height:30px;
+	line-height: 25px;
+	text-align: center;
+	position: absolute;
+	right:10px;
+	top:-5px;
+	font-weight: 100;
+	color:#464646;
+	
+
+}
+#add_address .mui-input-group {
+
+     background-color: #F7F7F7 !important; 
+}
+#add_address .mui-input-group:before {
+     background-color: transparent; 
+}
+#add_address .mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before {
+    color: #D8320C !important;
+}
+/*底部导航*/
+.footer{
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	border-top:1px solid #DADADA;
+	background:#fff;
+}
+
+.footer a:nth-child(1),
+.footer a:nth-child(2){
+	width:17%;
+	height:38px;
+	text-align: center;
+	color:#252525;
+	font-size: 12px;
+	line-height: 10px;
+	position: relative;
+	
+}
+.footer a:nth-child(2){
+	border-left:1px solid #DADADA;
+	
+}
+.gouwu_munber{
+	padding:2px 3px;
+	border-radius: 20px;
+	text-align: center;
+	position: absolute;
+	left: 38px;
+	top:2px;
+	background:#DA4320;
+	color:#fff;
+	font-size: 12px;
+}
+.footer a:nth-child(3),
+.footer a:nth-child(4){
+	width:33%;
+	height:38px;
+	text-align: center;
+	line-height: 38px;
+	background:#CFCFCF;
+	color:#252525;
+	
+}
+.footer a:nth-child(4){
+
+	background:#D8320C !important;
+	color:#FFFFFF !important;
+	
+
+	
+}
+/*点击图片放大类效果*/
+#Top_ditail p{
+	width:100%;
+	overflow: auto;
+}
+.mui-content img.max{
+	width:200%;height:auto;
+
+}
+.mui-content img.min{width:100%;height:auto;}
+

@@ -1,0 +1,203 @@
+
+/*头部 */
+.dtl_top{
+	width:100%;
+	background:#fafafa;
+	/*margin-bottom: 5px;*/
+	padding:10px 15px;
+	text-align: center;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 10000;
+}
+.dtl_top a i{
+	color:#666;
+	font-size:25px;
+	margin-left:-5px;
+}
+.com_details{
+	color:#333;
+	font-size:16px;
+	font-weight: 600;
+}
+section{
+	margin-top:46px;
+}
+/*头部 */
+
+/* 基本样式 */
+body{
+	font-family: "微软雅黑";
+	margin-bottom: 62px;
+	font-size: 15px;
+	color: #000;
+	background: #FAFAFA;
+}
+ul,li,i,b,p,h1,h2,h3,h4,h5,h6,dd,dt,dl,a,textarea{
+	padding:0;margin:0;
+}
+ul,li{
+	list-style: none;
+}
+.clear:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+    zoom:1;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+a{
+	color:#333;
+}
+a:hover{
+	color:#fff;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #999;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+  font-size: 14px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+}
+
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #999;
+  font-size: 14px;
+}
+
+.mui-input-group:after{
+	background: transparent;
+}
+.mui-content{
+	background: #FAFAFA;
+}
+.mui-table-view:before{
+	background: transparent;
+}
+.mui-table-view-chevron .mui-table-view-cell{
+	border-bottom: 1px solid #CFCFD2;
+}
+/* 基本样式 */
+/*主题*/
+#form{
+	background: transparent;
+}
+.update {
+	font-style: normal;
+	margin-right: -25px;
+	font-size: 12px;
+	color:#333;
+}
+.float{padding:0;}
+.float>li{
+	float:left;
+}
+.pad_right{
+	padding-right:0 !important;
+	padding:11px 15px 0; 
+}
+.mui-input-group .mui-input-row:after{
+	background:#fff;
+}
+.mui-table-view-cell:after{
+	background: transparent;
+}
+.mui-ios .mui-table-view-cell:first-child{
+	border-bottom: 1px solid #DADADD;
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+	color:#333;
+}
+.mui-radio input[type=radio]{
+	position: absolute;
+	top:1px;
+}
+.mui-input-row label{
+	line-height: .3;
+}
+.mui-radio input[type=radio]:checked:before{
+	color:#D8320C;
+}
+.mui-radio.mui-left input[type=radio]{
+	left:15px;
+}
+.mui-radio.mui-left label{
+	padding-left:35px;
+	font-size: 12px;
+	color:#666;
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	font-size: 16px;
+}
+.info{
+	margin-top:10px;
+	padding:0 0 10px 15px;
+}
+.info>p{
+	padding:10px 0;
+	color:#333;
+}
+.input{
+	border:1px solid #ddd !important;
+}
+.number{
+	height:41px !important;
+}
+.code{
+	position: relative;
+}
+#authCode{
+	position:absolute;
+	top:0;
+	right:24px;
+	width:100px;
+	background:#D8320C;
+	color:#fff;
+	line-height: 32px;
+	text-align: center;
+}
+.password{
+	height: 100px !important;
+}
+.en_password{
+	margin-bottom: 10px !important;
+}
+#btn{
+	display: block;
+	width:91%;       
+	background: #D8320C;
+	text-align: center;
+	margin: 0 15px;
+	color: #fff;
+	padding:10px 0;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 50px;
+}
+/*验证*/
+.info span{
+	float: right;
+  	margin-top: 8px;
+ 	margin-right: 5px;
+}
+.mui-input-group input, .mui-input-group textarea{
+	width:92%;
+}
+/*验证*/
+/*主题*/

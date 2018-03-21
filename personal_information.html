@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/personal_information.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="dtl_top">
+				<a href="comment_section.html" class="lf"><i class="mui-icon mui-icon-back"></i></a>
+				<a href="#topPopover" class="rt" ><i class="mui-icon mui-icon-gear" ></i></a>
+				<a class="com_details">个人信息</a>
+			</div>
+		</header>
+		<!--头部-->
+		<!--主题-->
+		<section class="mui-content">
+			<!--页面主内容区开始-->
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell mui-media">
+								<a id="head" class="mui-navigate-right" href="#picture">个人头像
+									<span class="mui-pull-right head">
+										<img class="head-img mui-action-preview" id="head-img1" src="images/logo1.png"/>
+									</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#" class="mui-navigate-right" id="vip">会员ID <i class="mui-pull-right update">15916207075</i></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#name" class="mui-navigate-right">真实姓名  <input type="text" placeholder="还是空的，快来填上你的名字吧" class="update rel_name"/></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#gender" class="mui-navigate-right gen">性别 <i class="mui-pull-right update genbox">未设置</i></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#" class="mui-navigate-right">身份证号 <input type="text" placeholder="未设置" class="update rel_name"/></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#" class="mui-navigate-right" id="popicker">所在地区 <i class="mui-pull-right update" id="pipcker">未设置</i></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#" class="mui-navigate-right">详细地址<input type="text" placeholder="未设置" class="update rel_name"/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--页面主内容区结束-->
+			<!--单页面开始-->
+			<!--个人头像-->
+			<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#" class="on">拍照</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">从相册选择</a>
+					</li>
+				</ul>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#picture"><b>取消</b></a>
+					</li>
+				</ul>
+			</div>
+			<!--个人头像-->
+			<!--性别-->
+			<div id="gender" class="mui-popover mui-popover-action mui-popover-bottom">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell genderB">
+						<a href="#">男</a>
+					</li>
+					<li class="mui-table-view-cell genderB">
+						<a href="#">女</a>
+					</li>
+				</ul>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#picture"><b class="cancel">取消</b></a>
+					</li>
+				</ul>
+			</div>
+			<!--性别-->
+			<!--单页面结束-->
+			<a href="#" id="btn">提交</a>
+		</section>
+		<!--主题-->
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personal_information.js"></script>
+		<script type="text/javascript">
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui('body').on('shown', '.mui-popover', function(e) {
+			//console.log('shown', e.detail.id);//detail为当前popover元素
+		});
+		mui('body').on('hidden', '.mui-popover', function(e) {
+			//console.log('hidden', e.detail.id);//detail为当前popover元素
+		});
+		var info = document.getElementById("info");
+		mui('body').on('tap', '.mui-popover-action li>a', function() {
+			var a = this,
+				parent;
+			//根据点击按钮，反推当前是哪个actionsheet
+			for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+				if (parent.classList.contains('mui-popover-action')) {
+					break;
+				}
+			}
+			//关闭actionsheet
+			mui('#' + parent.id).popover('toggle');
+			
+		})
+		</script>
+	</body>
+</html>
