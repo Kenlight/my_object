@@ -99,7 +99,7 @@
 		<!--弹出框meniu2颜色尺寸选择-->
 		<div id="detail_sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
     <!-- 可选择菜单 -->	
-    <form action="" method="post">
+    <!--<form action="" method="post">-->
 	    <ul class="mui-table-view">
 	   	<li class="mui-table-view-cell">
 					<p>¥4500.00</p>
@@ -192,7 +192,7 @@
 	       <button type="submit" class="shoipping_btn_right ">立即购买</button>
 	      </li>
 	    </ul>
-	</form>
+	<!--</form>-->
 	</div>
 		
 			<!--弹出框meniu3地址选择-->
@@ -244,8 +244,8 @@
 		</div>
 		<!--详情底部导航-->
 		<div class="footer">
-			<a href="#"><i class="mui-icon-extra mui-icon-extra-custom"></i><br>客服</a>
-			<a href="#"><b class="gouwu_munber">18</b><i id="end" class="mui-icon  iconfont">&#xe63f</i><br>购物车</a>
+			<a href="custom_service.html"><i class="mui-icon-extra mui-icon-extra-custom"></i><br>客服</a>
+			<a href="shopping_cart.html"><b class="gouwu_munber">18</b><i id="end" class="mui-icon  iconfont">&#xe63f</i><br>购物车</a>
 			<a class="addcar">加入购物车</a>
 			<a href="#detail_sheet">立即购买</a>
 		</div>
@@ -261,7 +261,10 @@
 		<script src="js/detail.js"></script>
 <script type="text/javascript">
 			mui.init();
-
+	$(".shoipping_btn_right").click(function(){
+		mui('.shoipping_btn_right').popover('hide');
+		window.location.href="submit_order.html"
+	})
 		</script>
 	</body>
 

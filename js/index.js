@@ -28,9 +28,5 @@ console.log($("#classification_r").css("height"))
 		$("ul.Commodity_hot li img").css("height",$("ul.Commodity_hot li img").css("width"));
 		}
 		view_height();
-	//点击底部导航链接获取url跳转链接,弹出模态框
-function shop_url(obj){
-	var url = $(obj).data('url');
-	location.href=url;
-}
+
 }

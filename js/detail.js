@@ -31,7 +31,7 @@ var mySwiper = new Swiper('.swiper-container',{
 $(function() { 
     var offset = $("#end").offset(); 
     $(".addcar").click(function(event){ 
-    
+    mui('#detail_sheet').popover('hide');
         var addcar = $(this); 
  		var img = $(".swiper-wrapper li:first").find('img').attr('src'); 
         var flyer = $('<img class="u-flyer" src="'+img+'">'); 
@@ -48,10 +48,12 @@ $(function() {
                 height: 0 //结束时高度 
             },
             onEnd: function(){ //结束回调 
+            	
               var i=$(".gouwu_munber").html(); //提示信息 
                i++;
                 $(".gouwu_munber").html(i);
-                 mui.toast('加入成功',{ duration:'2000ms', type:'div' }) 
+                 mui.toast('加入成功',{ duration:'2000ms', type:'div' }) ;
+                
             } 
         }); 
     }); 
